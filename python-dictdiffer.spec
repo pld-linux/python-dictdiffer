@@ -19,6 +19,8 @@ URL:		https://github.com/inveniosoftware/dictdiffer
 %if %{with python2}
 BuildRequires:	python-modules >= 1:2.7
 BuildRequires:	python-setuptools
+BuildRequires:	python-setuptools_scm >= 3.1.0
+BuildRequires:	python-pytest-runner >= 2.7
 %endif
 %if %{with python3}
 BuildRequires:	python3-modules >= 1:3.4
