@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 %define		module		dictdiffer
 Summary:	Dictdiffer - a library that helps you to diff and patch dictionaries
@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Dictdiffer - biblioteka pomagająca porównywać i łatać s�
 Name:		python-%{module}
 # keep 0.8.x here for python2 support
 Version:	0.8.1
-Release:	8
+Release:	9
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/dictdiffer/
